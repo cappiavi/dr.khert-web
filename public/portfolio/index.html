@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a1a3a" />
+  <title>Khert Laguna Garde | Future Pediatrician & Technology Enthusiast</title>
+  <meta name="description" content="Portfolio of Khert Laguna Garde — aspiring medical doctor specializing in Pediatrics, passionate about medical research, technology, AI, and cybersecurity in healthcare." />
+  <meta name="author" content="Khert Laguna Garde" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Khert Laguna Garde | Future Pediatrician & Technology Enthusiast" />
+  <meta property="og:description" content="Aspiring pediatric physician blending medicine, research, and technology to improve children's health." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__pulse">
+      <svg viewBox="0 0 24 24" width="42" height="42" aria-hidden="true">
+        <path fill="currentColor" d="M12 21s-6.716-4.35-9.428-8.14C.86 10.29 1.27 6.6 4.06 5.09c2.02-1.1 4.2-.43 5.44 1.02L12 8.6l2.5-2.49c1.24-1.45 3.42-2.12 5.44-1.02 2.79 1.51 3.2 5.2 1.49 7.77C18.72 16.65 12 21 12 21z"/>
+      </svg>
+      <span class="loader__ecg"></span>
+    </div>
+    <p class="loader__text">Loading portfolio…</p>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand" aria-label="Go to top">
+        <span class="nav__brand-mark">KG</span>
+        <span class="nav__brand-text">Khert L. Garde</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#journey" class="nav__link">Journey</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#research" class="nav__link">Research</a>
+        <a href="#certifications" class="nav__link">Awards</a>
+        <a href="#music" class="nav__link">Music</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+        <span class="orb orb--3"></span>
+        <span class="float float--plus float--a">+</span>
+        <span class="float float--plus float--b">+</span>
+        <span class="float float--dna float--c">🧬</span>
+        <span class="float float--pulse float--d">💓</span>
+        <span class="grid-overlay"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content" data-animate>
+          <span class="hero__eyebrow">Aspiring Medical Doctor · Pediatrics</span>
+          <h1 class="hero__title">Khert Laguna Garde</h1>
+          <p class="hero__subtitle">Future Pediatrician <span class="dot">•</span> Aspiring Medical Doctor <span class="dot">•</span> Technology Enthusiast</p>
+          <p class="hero__intro">
+            Driven by compassion, science, and innovation, I aspire to become a pediatric
+            specialist dedicated to improving children's health while exploring the role of
+            technology in modern medicine.
+          </p>
+          <div class="hero__actions">
+            <a href="#journey" class="btn btn--primary">Explore My Journey</a>
+            <a href="#projects" class="btn btn--ghost">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat"><strong>Pediatrics</strong><span>Specialization Goal</span></div>
+            <div class="hero__stat"><strong>ICT</strong><span>Technology Background</span></div>
+            <div class="hero__stat"><strong>Research</strong><span>Cybersecurity &amp; AI</span></div>
+          </div>
+        </div>
+
+        <div class="hero__figure" data-animate>
+          <div class="hero__photo-wrap">
+            <div class="hero__ring"></div>
+            <img src="assets/images/profile.jpg" alt="Portrait of Khert Laguna Garde in a white lab coat" class="hero__photo" width="912" height="1104" />
+            <span class="hero__badge hero__badge--top">🩺 Pediatric Care</span>
+            <span class="hero__badge hero__badge--bottom">💻 Health Tech</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">01 · About Me</span>
+          <h2 class="section__title">Compassion meets innovation</h2>
+          <p class="section__lead">
+            A future physician passionate about pediatric healthcare, medical research, and the
+            responsible use of technology to make care more accessible.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__bio" data-animate>
+            <p>
+              I am an aspiring medical doctor pursuing a specialization in <strong>Pediatrics</strong>,
+              driven by a deep commitment to child healthcare and preventive medicine. My goal is to
+              deliver care that treats not only illness but nurtures the wellbeing of every child and family I serve.
+            </p>
+            <p>
+              Alongside medicine, I bring a strong background in <strong>Information and Communication
+              Technology</strong>. My experience spans programming, cybersecurity, computer networking,
+              and artificial intelligence — a foundation I intend to use to bridge the gap between
+              healthcare and modern technology.
+            </p>
+            <p>
+              I am fascinated by <strong>medical research</strong> and improving patient outcomes, and I
+              believe the future of medicine lies in combining clinical excellence with intelligent,
+              secure, and accessible digital tools.
+            </p>
+          </div>
+
+          <ul class="about__cards">
+            <li class="glass about__card" data-animate>
+              <span class="about__icon">🧒</span>
+              <h3>Pediatric Vision</h3>
+              <p>Specializing in child healthcare with a focus on prevention and long-term wellbeing.</p>
+            </li>
+            <li class="glass about__card" data-animate>
+              <span class="about__icon">🔬</span>
+              <h3>Research Minded</h3>
+              <p>Passionate about medical research and evidence that improves patient outcomes.</p>
+            </li>
+            <li class="glass about__card" data-animate>
+              <span class="about__icon">🛡️</span>
+              <h3>Tech &amp; Security</h3>
+              <p>Skilled in programming, cybersecurity, networking, and artificial intelligence.</p>
+            </li>
+            <li class="glass about__card" data-animate>
+              <span class="about__icon">🌍</span>
+              <h3>Accessible Care</h3>
+              <p>Combining medicine and technology to improve healthcare accessibility for all.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE / JOURNEY ============ -->
+    <section class="section section--alt" id="journey">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">02 · Medical Journey</span>
+          <h2 class="section__title">The path so far</h2>
+          <p class="section__lead">An evolving journey from curiosity about science to a mission in pediatric medicine.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item" data-animate>
+            <span class="timeline__dot"></span>
+            <div class="glass timeline__card">
+              <span class="timeline__stage">Stage 1</span>
+              <h3>Early Passion for Science</h3>
+              <p>An early interest in science, healthcare, and helping others sparked the dream of becoming a physician.</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-animate>
+            <span class="timeline__dot"></span>
+            <div class="glass timeline__card">
+              <span class="timeline__stage">Stage 2</span>
+              <h3>ICT &amp; Technology Background</h3>
+              <p>Built a strong foundation in information technology — programming, networking, and computer systems.</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-animate>
+            <span class="timeline__dot"></span>
+            <div class="glass timeline__card">
+              <span class="timeline__stage">Stage 3</span>
+              <h3>Research &amp; Innovation</h3>
+              <p>Explored cybersecurity, artificial intelligence, and innovation through hands-on research projects.</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-animate>
+            <span class="timeline__dot"></span>
+            <div class="glass timeline__card">
+              <span class="timeline__stage">Stage 4</span>
+              <h3>Medical Education Journey</h3>
+              <p>Pursuing medical education with dedication, discipline, and a heart set on pediatric care.</p>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--goal" data-animate>
+            <span class="timeline__dot timeline__dot--goal"></span>
+            <div class="glass timeline__card timeline__card--goal">
+              <span class="timeline__stage">Future Goal</span>
+              <h3>Pediatric Specialist</h3>
+              <p>Becoming a pediatric specialist focused on children's health and wellbeing — powered by compassion and technology.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">03 · Skills</span>
+          <h2 class="section__title">Where medicine and technology meet</h2>
+          <p class="section__lead">A blend of clinical interests, technical ability, and professional strengths.</p>
+        </div>
+
+        <div class="skills">
+          <article class="glass skills__group" data-animate>
+            <div class="skills__group-head">
+              <span class="skills__group-icon">🩺</span>
+              <h3>Medical Interests</h3>
+            </div>
+            <ul class="skills__list">
+              <li>Pediatrics</li>
+              <li>Child Healthcare</li>
+              <li>Preventive Medicine</li>
+              <li>Medical Research</li>
+              <li>Patient Education</li>
+            </ul>
+          </article>
+
+          <article class="glass skills__group" data-animate>
+            <div class="skills__group-head">
+              <span class="skills__group-icon">💻</span>
+              <h3>Technology Skills</h3>
+            </div>
+            <ul class="skills__list">
+              <li>Programming</li>
+              <li>Web Development</li>
+              <li>Cybersecurity</li>
+              <li>Artificial Intelligence</li>
+              <li>Computer Networking</li>
+            </ul>
+          </article>
+
+          <article class="glass skills__group" data-animate>
+            <div class="skills__group-head">
+              <span class="skills__group-icon">🌟</span>
+              <h3>Professional Skills</h3>
+            </div>
+            <ul class="skills__list">
+              <li>Research</li>
+              <li>Problem Solving</li>
+              <li>Communication</li>
+              <li>Leadership</li>
+              <li>Continuous Learning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">04 · Projects</span>
+          <h2 class="section__title">Selected work &amp; explorations</h2>
+          <p class="section__lead">Projects at the intersection of security, intelligence, and the web.</p>
+        </div>
+
+        <!-- Editable project cards: duplicate an <article> to add more -->
+        <div class="projects">
+          <article class="glass project" data-animate>
+            <div class="project__media">
+              <img src="assets/images/project-cyber.jpg" alt="Cybersecurity in government systems research" loading="lazy" width="1200" height="800" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Cybersecurity in Government Systems</h3>
+              <p class="project__desc">Research focused on cybersecurity challenges and strategic solutions for government systems.</p>
+              <ul class="project__tags">
+                <li>Cybersecurity</li><li>Risk Analysis</li><li>Policy</li>
+              </ul>
+              <a href="#research" class="project__link">View project <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="glass project" data-animate>
+            <div class="project__media">
+              <img src="assets/images/project-ai.jpg" alt="Artificial intelligence projects" loading="lazy" width="1200" height="800" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Artificial Intelligence Projects</h3>
+              <p class="project__desc">Exploring AI applications, automation, and intelligent systems for real-world impact.</p>
+              <ul class="project__tags">
+                <li>AI</li><li>Automation</li><li>Prompt Engineering</li>
+              </ul>
+              <a href="#contact" class="project__link">View project <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="glass project" data-animate>
+            <div class="project__media">
+              <img src="assets/images/project-web.jpg" alt="Web development projects" loading="lazy" width="1200" height="800" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Web Development Projects</h3>
+              <p class="project__desc">Creating responsive websites and modern digital solutions with clean, accessible code.</p>
+              <ul class="project__tags">
+                <li>HTML/CSS</li><li>JavaScript</li><li>Responsive</li>
+              </ul>
+              <a href="#contact" class="project__link">View project <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">05 · Research</span>
+          <h2 class="section__title">Academic &amp; research profile</h2>
+          <p class="section__lead">Advancing secure, innovative systems that support society and healthcare.</p>
+        </div>
+
+        <div class="research">
+          <article class="glass research__feature" data-animate>
+            <span class="research__label">Featured Research</span>
+            <h3 class="research__title">
+              Cybersecurity in Government Systems: Integrating Primary Analysis of Challenges and Strategic Solutions
+            </h3>
+            <p class="research__abstract">
+              An in-depth study examining the security challenges facing government information systems,
+              paired with a primary analysis of practical, strategic solutions to strengthen resilience,
+              protect sensitive data, and safeguard public trust.
+            </p>
+            <div class="research__meta">
+              <span>🔐 Cybersecurity Analysis</span>
+              <span>🏛️ Government Systems</span>
+              <span>📊 Strategic Solutions</span>
+            </div>
+          </article>
+
+          <div class="research__side">
+            <article class="glass research__card" data-animate>
+              <h4>Research Interests</h4>
+              <p>Cybersecurity, artificial intelligence, digital health, and preventive pediatric medicine.</p>
+            </article>
+            <article class="glass research__card" data-animate>
+              <h4>Technology Innovation</h4>
+              <p>Applying AI and secure systems design to real-world problems in public and clinical settings.</p>
+            </article>
+            <article class="glass research__card" data-animate>
+              <h4>Future Research Goals</h4>
+              <p>Exploring how technology can improve child health outcomes and healthcare accessibility.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">06 · Achievements</span>
+          <h2 class="section__title">Certifications &amp; recognition</h2>
+          <p class="section__lead">Continuous learning across technology, AI, and education.</p>
+        </div>
+
+        <div class="certs">
+          <article class="glass cert" data-animate>
+            <span class="cert__ribbon">Certified</span>
+            <span class="cert__icon">🖥️</span>
+            <h3>Computer Systems Servicing NC II</h3>
+            <p>National certification in computer systems servicing and hardware.</p>
+          </article>
+          <article class="glass cert" data-animate>
+            <span class="cert__ribbon">Training</span>
+            <span class="cert__icon">🤖</span>
+            <h3>AI Prompt Engineering</h3>
+            <p>Specialized training in effective prompt engineering for AI systems.</p>
+          </article>
+          <article class="glass cert" data-animate>
+            <span class="cert__ribbon">Gemini</span>
+            <span class="cert__icon">🎓</span>
+            <h3>Gemini Certified Faculty</h3>
+            <p>Recognized faculty proficiency with Google Gemini tools.</p>
+          </article>
+          <article class="glass cert" data-animate>
+            <span class="cert__ribbon">Gemini</span>
+            <span class="cert__icon">📚</span>
+            <h3>Gemini Certified Educator</h3>
+            <p>Certified educator applying Gemini AI in learning environments.</p>
+          </article>
+          <article class="glass cert" data-animate>
+            <span class="cert__ribbon">Published</span>
+            <span class="cert__icon">📄</span>
+            <h3>Research Publications</h3>
+            <p>Contributions to academic research and published work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPOTIFY MUSIC ============ -->
+    <section class="section" id="music">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">07 · Playlist</span>
+          <h2 class="section__title">Currently Listening To</h2>
+          <p class="section__lead">The soundtrack that keeps me focused between studies and code.</p>
+        </div>
+
+        <div class="glass music" data-animate>
+          <div class="music__eq" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="music__player">
+            <iframe
+              title="Khert's Spotify Playlist"
+              style="border-radius:16px"
+              src="https://open.spotify.com/embed/playlist/6ITdTyE9MrdfBnwvjhi2na?utm_source=generator&theme=0"
+              width="100%" height="420" frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+          <p class="music__note">🎵 Powered by Spotify.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">08 · Contact</span>
+          <h2 class="section__title">Let's connect</h2>
+          <p class="section__lead">Open to research collaboration, mentorship, and opportunities in medicine and technology.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info" data-animate>
+            <a class="glass contact__item" href="mailto:khert.garde@example.com">
+              <span class="contact__icon">✉️</span>
+              <div><strong>Email</strong><span>dr.khert.pediatrics.work@gmail.com</span></div>
+            </a>
+            <a class="glass contact__item" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">🐙</span>
+              <div><strong>GitHub</strong><span>github.com/khertgarde</span></div>
+            </a>
+            <a class="glass contact__item" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">💼</span>
+              <div><strong>LinkedIn</strong><span>linkedin.com/in/khert-garde</span></div>
+            </a>
+            <a class="glass contact__item" href="#" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">🌐</span>
+              <div><strong>Social</strong><span>@medkhrt</span></div>
+            </a>
+          </div>
+
+          <form class="glass contact__form" id="contactForm" novalidate data-animate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <span class="field__error" data-error-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+              <span class="field__error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+            <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-mark">KG</span>
+        <p>Future Pediatrician &amp; Technology Enthusiast — building a healthier, smarter tomorrow.</p>
+      </div>
+      <nav class="footer__social" aria-label="Social links">
+        <a href="mailto:dr.khert.pediatrics.work@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+        <a href="https://open.spotify.com/playlist/7w9Rm2g4r4ruefyhf1wEwI" target="_blank" rel="noopener noreferrer" aria-label="Spotify">🎵</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Khert Laguna Garde. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
